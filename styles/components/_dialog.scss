@@ -1,0 +1,49 @@
+.chat-conversation {
+    @include flexColumn(space-around);
+    height: 89%;
+}
+
+.dialog-container {
+    @include flexRow();
+    margin: 10px 0;
+
+    &.chat-contact {
+        flex-direction: row-reverse;
+
+    }
+
+    img {
+        margin: 0 15px;
+    }
+
+}
+
+.chat-contact {
+    @include flexRow(flex-start);
+
+    .bubble-contact {
+        @include chatBubbleContact();
+        
+    }
+}
+
+.chat-me {
+    @include flexRow(flex-start);
+
+    .bubble-me {
+       @include chatBubbleMe();
+    }
+}
+
+
+.chat-answer {
+    @include flexRow();
+    font-size: $default-font-size;
+    height: 9%;
+    width: 100%;
+    border-top: 1px solid $alternative-font-color;
+
+    input {
+        width: 70%;
+    }
+}

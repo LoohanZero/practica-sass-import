@@ -1,0 +1,42 @@
+@mixin flexRow($justify-content: center, $align-items: center) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin flexColumn($justify-content: center, $align-items: center) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin chatBubbleContact() {
+    background-color: $chat-color-contact;
+    width: 70%;
+    padding: 5px 15px;
+    color: $alternative-font-color;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    position: relative;
+    top: 20px;
+    
+}
+
+@mixin chatBubbleMe() {
+    background-color: $contact-color;
+    width: 70%;
+    padding: 5px 15px;
+    color: $default-font-color;
+    border-radius: 30px;
+    border-top-left-radius: 0px;
+    position: relative;
+    top: 20px;
+}
+
+@mixin dotDot {
+    height: $dot-sizing;
+    width: $dot-sizing;
+    border-radius: 50%;
+    position: absolute;
+}

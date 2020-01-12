@@ -1,0 +1,51 @@
+.contacts-sidebar {
+    @include flexColumn();
+    box-sizing: content-box;
+    background-color: $contact-color;
+    font-size: $default-font-size;
+    height: calc(100vh - 50px);
+
+    @media (max-width: 1000px) {
+        display: none;
+    }
+}
+
+.sidebar-img {
+    height: 16%;
+    min-height: 105px;
+    min-width: 105px;
+    @include flexColumn();
+    background-color: $contact-color;
+    position: relative;
+
+    &.chatter {
+        background-color: $selected-color;
+    }
+
+    .dotdot {
+        @include dotDot();
+    }
+
+    .dotdot.blue {
+        background-color: #30d5c8;
+        top: 25px;
+        right: 23px;
+    }
+
+    .dotdot.orange {
+        top: 25px;
+        right: 23px;
+        background-color: orange;
+    }
+
+    .dotdot.green-contact {
+        background-color: $green-dot-color;
+        top: 25px;
+        right: 23px;
+    }
+    img {
+        margin: 10px;
+    }
+}
+
+

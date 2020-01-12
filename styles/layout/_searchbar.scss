@@ -1,0 +1,49 @@
+.searchbar {
+    width: $complete-width-height;
+    height: 50px;
+    @include flexRow(space-between, center);
+    padding: 0 50px;
+    box-sizing: border-box;
+    color: $alternative-font-color;
+    border-bottom: 1px solid $alternative-font-color;
+ 
+}
+
+.section-back {
+    @include flexRow(flex-start);
+    width: $section-width;
+    box-sizing: border-box;
+    position: relative;
+
+    .fas.fa-search {
+        position: absolute;
+        left: 41px;
+        top: 1;
+    }
+
+}
+
+.section-middle {
+    @include flexRow();
+    width: $section-width;
+    box-sizing: border-box;
+    position: relative;
+
+    .dot-green {
+        @include dotDot();
+        background-color: $green-dot-color;
+        top: 6px;
+        left: 197px;
+    
+    }
+
+}
+
+.section-right {
+    @include flexRow(flex-end);
+    width: $section-width;
+    box-sizing: border-box;
+}
+
+
+

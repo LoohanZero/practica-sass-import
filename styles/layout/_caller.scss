@@ -1,0 +1,60 @@
+.section-call {
+    @include flexColumn(space-around);
+    font-size: 15px;
+
+    
+    @media (max-width: 900px) {
+        display: none;
+    }
+    
+    img {
+        height: 100px;
+    }
+
+    border-left: 1px solid $alternative-font-color;
+   
+}
+
+.caller-name {
+    @include flexRow(space-between);
+    width: $complete-width-height;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.caller-button {
+    @include flexRow(space-between);
+    width: $complete-width-height;
+    padding: 100px;
+    box-sizing: border-box;
+
+    .caller-sleep {
+        background-color: $green-dot-color;
+        border-radius: 50%;
+        height: 45px;
+        width: 45px;
+        @include flexRow();
+      
+
+        .fas.fa-moon {
+            color: white;
+    
+        }
+
+    }
+
+    .caller-not {
+        background-color: firebrick;
+        border-radius: 50%;
+        height: 45px;
+        width: 45px;
+        @include flexRow();
+
+        
+        .fas.fa-user-times {
+            color: white;
+    
+        }
+    }
+}
+

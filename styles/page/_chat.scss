@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: $default-font-family;
+    color: $default-font-color;
+    font-size: $default-font-size;
+    @include flexColumn();
+    height: 100vh;
+}
+
+.chat-section {
+    @include flexRow(space-between, flex-start);
+    /*flex-wrap: wrap;*/
+    font-size: $small-font-size;
+    height: calc(100vh - 50px);
+
+}
+
+
+
+.section-chat {
+    width: calc(50% - 52.5px);
+    height: calc(100vh - 50px);
+    @include flexColumn(space-between);
+    min-height: 680px;
+    min-width: 500px;
+
+    @media (max-width: 900px) {
+        width: 100%;
+    }
+    
+
+}
+
+
+
+
+
+.section-call {
+    width: calc(50% - 52.5px);
+    height: calc(100vh - 50px);
+    min-width: 450px;
+    min-height: 500px;
+
+}
