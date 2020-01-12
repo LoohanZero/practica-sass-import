@@ -118,8 +118,11 @@ input {
   box-sizing: content-box;
   background-color: #ececfa;
   font-size: 13px;
-  height: calc(100vh - 50px); }
+  height: calc(101vh - 50px); }
   @media (max-width: 1000px) {
+    .contacts-sidebar {
+      display: none; } }
+  @media (max-height: 700px) {
     .contacts-sidebar {
       display: none; } }
 

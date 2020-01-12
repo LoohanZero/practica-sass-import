@@ -3,9 +3,13 @@
     box-sizing: content-box;
     background-color: $contact-color;
     font-size: $default-font-size;
-    height: calc(100vh - 50px);
+    height: calc(101vh - 50px);
 
     @media (max-width: 1000px) {
+        display: none;
+    }
+
+    @media (max-height: 700px) {
         display: none;
     }
 }
